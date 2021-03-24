@@ -17,12 +17,12 @@ public class DataSet extends SingleDataSet{
 
     @Override
     protected void readOperation() {
-        System.out.print("Введите операцию: ");
+        System.out.print("Enter operation: ");
         operation = scan.next().charAt(0);
     }
 
     private void readNum2(){
-        System.out.print("Введите второе число: ");
+        System.out.print("Enter the second number: ");
         num2 = scan.nextDouble();
     }
 

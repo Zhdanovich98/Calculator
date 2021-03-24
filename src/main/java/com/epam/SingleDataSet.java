@@ -25,7 +25,7 @@ public class SingleDataSet{
 
     protected void readNum1(){
         System.out.println();
-        System.out.print("Введите число: ");
+        System.out.print("Enter the number: ");
         num1 = scan.nextDouble();
     }
 
@@ -34,7 +34,7 @@ public class SingleDataSet{
     }
 
     protected void readOperation() {
-        System.out.print("Введите номер операции: ");
+        System.out.print("Enter the operation number: ");
         operation = scan.next().charAt(0);
     }
 

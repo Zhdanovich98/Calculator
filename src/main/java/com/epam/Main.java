@@ -4,40 +4,40 @@ import java.util.Scanner;
 
 public class Main{ 
     public static void printResult(Calculator calculator, Scanner scan){
-            System.out.print("Результат: ");
+            System.out.print("Result: ");
             System.out.println(calculator.calculate());
     }
 
     public static Calculator menu(Scanner scan){
-        System.out.println("Доступны следующие операции:");
-        System.out.println("1) с одним числом");
-        System.out.println("2) с двумя числами");
-        System.out.print("Выберите тип операции: ");
+        System.out.println("The following operations are available:");
+        System.out.println("1) with one number");
+        System.out.println("2) with two numbers");
+        System.out.print("Select the type of operation: ");
         int choise = scan.nextInt();
         Calculator calc;
         System.out.println();
         switch (choise){
             case (1):
-            System.out.println("Доступны следующие операции:");
-            System.out.println("1) sin (синус)");
-            System.out.println("2) cos (косинус)");
-            System.out.println("3) sqrt (квадратный корень)");
+            System.out.println("The following operations are available:");
+            System.out.println("1) sin");
+            System.out.println("2) cos");
+            System.out.println("3) sqrt");
             calc = new Calculator(scan, true); //isSingle == true
             return calc;
 
             case (2):
-            System.out.println("Доступны следующие операции:");
-            System.out.println(" + (сложение)");
-            System.out.println(" - (вычитание)");
-            System.out.println(" * (умножение)");
-            System.out.println(" / (деление)");
-            System.out.println(" % (вычисление процента)");
+            System.out.println("The following operations are available:");
+            System.out.println(" + (addition)");
+            System.out.println(" - (subtraction)");
+            System.out.println(" * (multiplication)");
+            System.out.println(" / (division)");
+            System.out.println(" % (percentage calculation)");
         
             calc = new Calculator(scan, false); //isSingle == false
             return calc;
             
             default:
-            System.out.println("Некорректный ввод. Повторите ещё раз: ");    
+            System.out.println("Incorrect input. Repeat one more time: ");    
             return menu(scan);     
         }
     }

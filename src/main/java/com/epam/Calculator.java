@@ -28,7 +28,7 @@ public class Calculator {
 
 
 public double newCalculation(){
-    System.out.println("Неверная операция. Повторите ввод. ");
+    System.out.println("Invalid operation. Re-enter. ");
     if (isSingleDataSet){
         singleData = new SingleDataSet(scanner);
     } else {
